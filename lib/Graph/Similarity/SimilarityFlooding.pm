@@ -7,7 +7,7 @@ use Graph;
 use Moose;
 use Text::Levenshtein qw(distance);
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.02';
 
 with 'Graph::Similarity::Method';
 
@@ -147,7 +147,7 @@ Graph::Similarity::SimilarityFlooding -  Similarity Flooding implementation
 
 =head1 VERSION
 
-Version 0.0.2
+Version 0.02
 
 =head1 SYNOPSIS
 

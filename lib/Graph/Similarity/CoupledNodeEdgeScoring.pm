@@ -7,7 +7,7 @@ use Moose;
 use Graph;
 use Math::Matrix;
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.02';
 
 with 'Graph::Similarity::Method';
 
@@ -111,7 +111,7 @@ Graph::Similarity::CoupledNodeEdgeScoring - Coupled Node-Edge Scoring implementa
 
 =head1 VERSION
 
-Version 0.0.2
+Version 0.02
 
 =head1 SYNOPSIS
 

@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version; 
-our $VERSION = qv('0.0.2');
+our $VERSION = qv('0.0.3');
 
 use Moose;
 
@@ -65,7 +65,7 @@ Graph::Similarity - Calculate similarity of the vertices in graph(s)
 
 =head1 VERSION
 
-This document describes Graph::Similarity version 0.0.2
+This document describes Graph::Similarity version 0.0.3
 
 
 =head1 SYNOPSIS

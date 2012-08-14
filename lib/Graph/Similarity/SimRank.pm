@@ -7,7 +7,7 @@ use Graph;
 
 with 'Graph::Similarity::Method';
 
-our $VERSION = '0.0.2';
+our $VERSION = '0.02';
 
 has 'graph'     => (is => 'rw', isa => 'Graph', required => 1);
 has 'constant'  => (is => 'rw', isa => 'Num', default => 0.6);
@@ -79,7 +79,7 @@ Graph::Similarity::SimRank - SimRank implementation
 
 =head1 VERSION
 
-Version 0.0.2
+Version 0.02
 
 =head1 SYNOPSIS
 

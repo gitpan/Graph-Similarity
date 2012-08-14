@@ -15,19 +15,19 @@ name: Graph-Similarity
 provides:
   Graph::Similarity:
     file: lib/Graph/Similarity.pm
-    version: v0.0.2
+    version: v0.0.3
   Graph::Similarity::CoupledNodeEdgeScoring:
     file: lib/Graph/Similarity/CoupledNodeEdgeScoring.pm
-    version: v0.0.2
+    version: 0.02
   Graph::Similarity::Method:
     file: lib/Graph/Similarity/Method.pm
-    version: v0.0.1
+    version: 0.01
   Graph::Similarity::SimRank:
     file: lib/Graph/Similarity/SimRank.pm
-    version: v0.0.2
+    version: 0.02
   Graph::Similarity::SimilarityFlooding:
     file: lib/Graph/Similarity/SimilarityFlooding.pm
-    version: v0.0.2
+    version: 0.02
 requires:
   Graph: 0
   Math::Matrix: 0
@@ -40,4 +40,4 @@ requires:
   version: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: v0.0.2
+version: v0.0.3
