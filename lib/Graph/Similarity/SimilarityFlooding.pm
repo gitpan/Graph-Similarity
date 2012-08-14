@@ -7,7 +7,7 @@ use Graph;
 use Moose;
 use Text::Levenshtein qw(distance);
 
-our $VERSION = '0.01';
+our $VERSION = '0.0.2';
 
 with 'Graph::Similarity::Method';
 
@@ -147,7 +147,7 @@ Graph::Similarity::SimilarityFlooding -  Similarity Flooding implementation
 
 =head1 VERSION
 
-Version 0.01
+Version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -159,6 +159,13 @@ This is the implementation of the below paper.
 
 B<Sergey Melnik, Hector Garcia-Molina, Erhard Rahm "Similarity Flooding: A Versatile Graph Matching Algorithm
 and its Application to Schema Matching">
+
+=head1 METHODS
+
+=head2 calculate()
+
+This calculates Similarity Flooding. The algorithm is not clearly mentioned in the papeer.
+I made it to code from reading "Figure 3. Example illustrating the Similarity Flooding Algorithm".
 
 =head1 AUTHOR
 

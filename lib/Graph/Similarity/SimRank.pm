@@ -3,14 +3,14 @@ package Graph::Similarity::SimRank;
 use strict;
 use warnings;
 use Moose;
+use Graph;
 
 with 'Graph::Similarity::Method';
 
-our $VERSION = '0.01';
+our $VERSION = '0.0.2';
 
 has 'graph'     => (is => 'rw', isa => 'Graph', required => 1);
 has 'constant'  => (is => 'rw', isa => 'Num', default => 0.6);
-##has 'num_of_iteration'  => (is => 'rw', isa => 'Int', default => 100);
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
@@ -79,7 +79,7 @@ Graph::Similarity::SimRank - SimRank implementation
 
 =head1 VERSION
 
-Version 0.01
+Version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -90,6 +90,18 @@ Please see L<Graph::Similarity>
 This is the implementation of the below paper.
 
 B<Glen Jeh, Jennifer Widon, "SimRank: A Measure of Structural-Context Similarity">
+
+=head1 METHODS
+
+=head2 setConst($const)
+
+The const value is 0.6 by default becasue wikipedia mentions this is more acturate value,
+whereas the paper uses 0.8.
+You can change this to what you want. The value should be between 0 and 1. 
+
+=head2 calculate()
+
+This calculates SimRank. The algorithm is Naive Method in section 4.4.1 in the paper. 
 
 =head1 AUTHOR
 

@@ -22,8 +22,6 @@
       "runtime" : {
          "requires" : {
             "Graph" : 0,
-            "Graph::Directed" : 0,
-            "Graph::Undirected" : 0,
             "Math::Matrix" : 0,
             "Moose" : 0,
             "Moose::Role" : 0,
@@ -38,23 +36,23 @@
    "provides" : {
       "Graph::Similarity" : {
          "file" : "lib/Graph/Similarity.pm",
-         "version" : "v0.0.1"
+         "version" : "v0.0.2"
       },
       "Graph::Similarity::CoupledNodeEdgeScoring" : {
          "file" : "lib/Graph/Similarity/CoupledNodeEdgeScoring.pm",
-         "version" : "0.01"
+         "version" : "v0.0.2"
       },
       "Graph::Similarity::Method" : {
          "file" : "lib/Graph/Similarity/Method.pm",
-         "version" : 0
+         "version" : "v0.0.1"
       },
       "Graph::Similarity::SimRank" : {
          "file" : "lib/Graph/Similarity/SimRank.pm",
-         "version" : "0.01"
+         "version" : "v0.0.2"
       },
       "Graph::Similarity::SimilarityFlooding" : {
          "file" : "lib/Graph/Similarity/SimilarityFlooding.pm",
-         "version" : "0.01"
+         "version" : "v0.0.2"
       }
    },
    "release_status" : "stable",
@@ -63,5 +61,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.1"
+   "version" : "v0.0.2"
 }

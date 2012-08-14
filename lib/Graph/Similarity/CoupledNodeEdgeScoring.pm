@@ -7,7 +7,7 @@ use Moose;
 use Graph;
 use Math::Matrix;
 
-our $VERSION = '0.01';
+our $VERSION = '0.0.2';
 
 with 'Graph::Similarity::Method';
 
@@ -111,7 +111,7 @@ Graph::Similarity::CoupledNodeEdgeScoring - Coupled Node-Edge Scoring implementa
 
 =head1 VERSION
 
-Version 0.01
+Version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -119,9 +119,20 @@ Please see L<Graph::Similarity>
 
 =head1 DESCRIPTION 
 
-This is the implementation of the below paper.
+This is the implementation of the below papers.
+
+B<Vincent D. Blondel "A Measure of Similarity between Graph Vertices: Applications to Synonym Extraction and Web Searching">
+
+and
 
 B<Laura Zager "Graph Similarity and Matching">
+
+=head1 METHODS
+
+=head2 calculate()
+
+This calculates Coupled Node-Edge Scoring. The algorithm is mentioned in Page.655 in Blondel's paper.
+The convergence is not taken into account. Please set the number of iteration instead.
 
 =head1 AUTHOR
 

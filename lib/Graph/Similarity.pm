@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version; 
-our $VERSION = qv('0.0.1');
+our $VERSION = qv('0.0.2');
 
 use Moose;
 
@@ -65,7 +65,7 @@ Graph::Similarity - Calculate similarity of the vertices in graph(s)
 
 =head1 VERSION
 
-This document describes Graph::Similarity version 0.0.1
+This document describes Graph::Similarity version 0.0.2
 
 
 =head1 SYNOPSIS
@@ -145,6 +145,10 @@ For example, when you specify two Graph in SimRank, it dies because SimRank need
 =head2 $s->calculate()
 
 Using the method that is specified by use(), calculate the similarity. This returns a hash reference which is the results of calculation.
+
+=head2 setNumOfIteration($num)
+
+Set the number of Iteration. The argument should be Integer.
 
 =head2 $s->showAllSimilarities()
 

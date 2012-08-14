@@ -5,6 +5,8 @@ use Data::Dumper;
 
 requires qw/calculate/;
 
+our $VERSION = '0.0.1';
+
 has 'num_of_iteration'  => (is => 'rw', isa => 'Int', default => 100);
 has 'sim' => (is => 'rw', isa => 'HashRef');
 
@@ -55,5 +57,54 @@ sub getSimilarity {
     }
     return;
 }
+
+
+=head1 NAME
+
+Graph::Similarity::Method - A common role of Graph::Similarity 
+
+=head1 VERSION
+
+Version 0.0.1
+
+=head1 SYNOPSIS
+
+Please see L<Graph::Similarity>
+
+=head1 DESCRIPTION 
+
+This is absctract class with Moose::Role which provides common methods.  
+
+=head1 METHODS
+
+The following methods are implemented here.
+
+=head2 setNumOfIteration($num)
+
+Please see L<Graph::Similarity>
+
+=head2 showAllSimilarities()
+
+Please see L<Graph::Similarity>
+
+=head2 getSimilairity("X", "Y")
+
+Please see L<Graph::Similarity>
+
+=head1 AUTHOR
+
+Shohei Kameda, C<< <shoheik at cpan.org> >>
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 2012 Shohei Kameda.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+=cut
 
 1;

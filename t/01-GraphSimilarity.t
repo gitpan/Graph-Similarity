@@ -5,8 +5,6 @@ use Test::Exception;
 use Graph::Similarity;
 
 use Graph;
-use Graph::Directed;
-use Graph::Undirected;
 use Data::Dumper;
 
 # Simple Graph
@@ -34,5 +32,4 @@ $s = new Graph::Similarity(graph => [$g3, $g4]);
 my $method3 = $s->use('SimilarityFlooding');
 isa_ok $method3, 'Graph::Similarity::SimilarityFlooding';
 
-#diag( "Testing Graph::Similarity $Graph::Similarity::VERSION, Perl $], $^X" );
 
