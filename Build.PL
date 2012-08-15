@@ -11,6 +11,7 @@ my $builder = Module::Build->new(
         'Test::More'            => 0,
         'Test::Exception'       => 0,
         'Test::Output'          => 0,
+        'Test::Perl::Critic'    => 0,
         'version'               => 0,
         'Graph'                 => 0,
         'Moose'                 => 0,

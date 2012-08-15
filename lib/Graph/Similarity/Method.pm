@@ -5,7 +5,7 @@ use Data::Dumper;
 
 requires qw/calculate/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has 'num_of_iteration'  => (is => 'rw', isa => 'Int', default => 100);
 has 'sim' => (is => 'rw', isa => 'HashRef');
@@ -65,7 +65,7 @@ Graph::Similarity::Method - A common role of Graph::Similarity
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
@@ -87,7 +87,7 @@ Please see L<Graph::Similarity>
 
 Please see L<Graph::Similarity>
 
-=head2 getSimilairity("X", "Y")
+=head2 getSimilarity("X", "Y")
 
 Please see L<Graph::Similarity>
 

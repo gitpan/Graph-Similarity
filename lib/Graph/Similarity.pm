@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version; 
-our $VERSION = qv('0.0.3');
+our $VERSION = qv('0.0.4');
 
 use Moose;
 
