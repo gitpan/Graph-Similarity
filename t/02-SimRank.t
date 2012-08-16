@@ -12,7 +12,7 @@ BEGIN {
 # Simple Graph
 my $g1 = Graph->new;
 $g1->add_vertices("a","b","c","d","e");
-$g1->add_edges(['a', 'b'], ['b', 'c'], ['a', 'd'], ['d', 'e']);
+$g1->add_edges(['a', 'b'], ['b', 'c'], ['a', 'd'], ['d', 'e'], ['c','a'], ['e', 'd']);
 
 my $method = new Graph::Similarity::SimRank(graph => $g1);
 

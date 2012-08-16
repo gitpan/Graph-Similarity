@@ -37,7 +37,7 @@
    "provides" : {
       "Graph::Similarity" : {
          "file" : "lib/Graph/Similarity.pm",
-         "version" : "v0.0.4"
+         "version" : "v0.0.5"
       },
       "Graph::Similarity::CoupledNodeEdgeScoring" : {
          "file" : "lib/Graph/Similarity/CoupledNodeEdgeScoring.pm",
@@ -62,5 +62,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.0.4"
+   "version" : "v0.0.5"
 }
